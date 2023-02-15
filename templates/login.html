@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="login" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Simple Linear Regression Model deployment</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet"  href="styles.css">
+  </head>
+  <body>
+
+    <div class="main-block">
+      <div class="left-part">
+        <i class="deploy_class"></i>
+        <h1> Salary Estimator </h1>
+        <p>Simple Linear Regression Machine Learning Model </p>
+        <div class="btn-group">
+          <a class="btn-item" href="https://github.com/Mr-N-Sibiya">Visit My Github page</a>
+
+        </div>
+
+      </div>
+
+      <form action = "{{url_for('predict')}}" methods = "post">
+        <div class="title">
+          <i class="fas fa-pencil-alt"></i>
+          <h2>Estimate Here</h2>
+        </div>
+        <div class="info">
+
+          <input type="values" name="years" placeholder="Years worked">
+          <br>
+          <output name="prediction" placeholder="prediction_text">Expected Salary</output>
+
+        </div>
+        <button type="submit" value="submit">prediction</button>
+
+      </form>
+      
+    </div>
+  </body>
+</html>
